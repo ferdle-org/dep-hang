@@ -32,7 +32,7 @@
 		<version.tika>2.9.2</version.tika>
 		<version.gson>2.11.0</version.gson>
 		<version.jmockit>1.49</version.jmockit>
-		<version.swagger>2.5.0</version.swagger>
+		<version.swagger>3.0.0</version.swagger>
 		<version.swagger-ui>3.0.0</version.swagger-ui>
 		<version.tp-api-common>s402</version.tp-api-common>
 		<version.pdf-renderer>1.0.5</version.pdf-renderer>
