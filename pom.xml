@@ -31,7 +31,7 @@
 		<version.itext>4.2.1</version.itext>
 		<version.tika>2.9.2</version.tika>
 		<version.gson>2.11.0</version.gson>
-		<version.jmockit>1.24</version.jmockit>
+		<version.jmockit>1.49</version.jmockit>
 		<version.swagger>2.5.0</version.swagger>
 		<version.swagger-ui>3.0.0</version.swagger-ui>
 		<version.tp-api-common>s402</version.tp-api-common>
