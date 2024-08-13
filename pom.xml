@@ -28,7 +28,7 @@
 		<version.tp-param>5</version.tp-param>
 		<version.spring>4.3.30.RELEASE</version.spring>
 		<version.aopalliance>1.0</version.aopalliance> <!-- Spring's dependency -->
-		<version.itext>2.1.7</version.itext>
+		<version.itext>4.2.1</version.itext>
 		<version.tika>2.9.2</version.tika>
 		<version.gson>2.11.0</version.gson>
 		<version.jmockit>1.24</version.jmockit>
