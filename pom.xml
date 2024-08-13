@@ -29,7 +29,7 @@
 		<version.spring>4.3.30.RELEASE</version.spring>
 		<version.aopalliance>1.0</version.aopalliance> <!-- Spring's dependency -->
 		<version.itext>2.1.7</version.itext>
-		<version.tika>1.28.3</version.tika>
+		<version.tika>2.9.2</version.tika>
 		<version.gson>2.11.0</version.gson>
 		<version.jmockit>1.24</version.jmockit>
 		<version.swagger>2.5.0</version.swagger>
