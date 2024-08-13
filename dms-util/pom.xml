@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 ../maven-v4_0_0.xsd">
+	<parent>
+		<groupId>transplace</groupId>
+		<artifactId>dms</artifactId>
+		<version>507</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>dms-ear</artifactId>
+	<packaging>ear</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>transplace</groupId>
+			<artifactId>dms-ejb</artifactId>
+			<type>ejb</type>
+		</dependency>
+		<dependency>
+			<groupId>transplace</groupId>
+			<artifactId>dms-war</artifactId>
+			<type>war</type>
+		</dependency>
+		<dependency>
+			<groupId>oracle</groupId>
+			<artifactId>com.bea.core.weblogic.commons.logging_1.3.0.0</artifactId>
+			<version>${version.weblogic}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>dms</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<configuration>
+					<version>5</version>
+					<defaultLibBundleDir>APP-INF/lib</defaultLibBundleDir>
+					<modules>
+						<jarModule>
+							<groupId>transplace</groupId>
+							<artifactId>dms-jpa</artifactId>
+							<unpack>true</unpack>
+						</jarModule>
+						<jarModule>
+							<groupId>transplace</groupId>
+							<artifactId>dms-common</artifactId>
+							<unpack>true</unpack>
+						</jarModule>
+						<ejbModule>
+							<groupId>transplace</groupId>
+							<artifactId>dms-ejb</artifactId>
+							<unpack>true</unpack>
+						</ejbModule>
+						<webModule>
+							<groupId>transplace</groupId>
+							<artifactId>dms-war</artifactId>
+							<contextRoot>/dms</contextRoot>
+							<unpack>true</unpack>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
