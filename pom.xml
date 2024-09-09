@@ -41,7 +41,7 @@
 		<version.hibernate-entitymanager>${version.hibernate-core}</version.hibernate-entitymanager>
 		<version.jboss-logging>3.4.1</version.jboss-logging>
 		<version.jboss-transaction-api>1.1.1.Final</version.jboss-transaction-api>
-		<version.log4j>2.23.1</version.log4j>
+		<version.log4j>2.24.0</version.log4j>
 		<argLine>-Djava.awt.headless=true</argLine>
 	</properties>
 
