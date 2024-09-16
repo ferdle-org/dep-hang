@@ -26,7 +26,7 @@
 		<version.forms>1.0.5</version.forms>
 		<version.tp-sal>10</version.tp-sal>
 		<version.tp-param>5</version.tp-param>
-		<version.spring>6.1.11</version.spring>
+		<version.spring>6.1.13</version.spring>
 		<version.aopalliance>1.0</version.aopalliance> <!-- Spring's dependency -->
 		<version.itext>4.2.1</version.itext>
 		<version.tika>2.9.2</version.tika>
